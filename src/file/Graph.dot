@@ -61,7 +61,7 @@ adventure -> we [label = 1];
 explore -> a [label = 1];
 to -> seek [label = 1];
 to -> go [label = 2];
-to -> a [label = 1, color = blue];
+to -> a [label = 1];
 to -> learn [label = 1];
 to -> new [label = 1];
 }
