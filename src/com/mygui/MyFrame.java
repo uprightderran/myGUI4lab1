@@ -23,7 +23,6 @@ import javax.swing.SwingUtilities;
  * MyFrame.
  */
 public class MyFrame extends JFrame {
-  private static final long sserialVersionUID = 1L;
 
   /**
    * A text field used to display and enter the file path selected by the user.

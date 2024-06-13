@@ -1,6 +1,5 @@
 package com.mygui;
 
-import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -44,14 +43,13 @@ public class TextGraph {
   private final Set<String> nodeSet; // 所有节点名称的字典
   private final Map<String, LinkedList<Node>> nodeInfo; // 所有节点名称与存储对应子节点的链表
   private static final int max = 9999;
-  volatile boolean running = true;  // 控制游走是否继续
 
   /**
    * Constructs a new TextGraph.
    */
   public TextGraph() {
-    nodeInfo = new HashMap<String, LinkedList<Node>>();
-    nodeSet = new LinkedHashSet<String>();
+    nodeInfo = new HashMap<>();
+    nodeSet = new LinkedHashSet<>();
   }
 
   /**
@@ -114,7 +112,11 @@ public class TextGraph {
     // 若 word2 不是 word1 的邻居，加入链表
     if (!existed) {
       Node node2 = new Node(word2);
-      neighbour.add(node2);
+      if (neighbour != null) {
+        neighbour.add(node2);
+      } else {
+        System.out.print("neighbour pointer empty\n");
+      }
     }
   }
 
@@ -127,7 +129,7 @@ public class TextGraph {
    */
   public void showTextGraph(String path, boolean color) throws IOException {
     try {
-      FileWriter fileWriter = new FileWriter(new File(path));
+      FileWriter fileWriter = new FileWriter(path);
       fileWriter.write("digraph TextGraph {\r\n");
 
       // 写入节点信息
@@ -426,16 +428,15 @@ public class TextGraph {
    *
    * @param startWord the word to start from
    * @param observer  the observer to update during the walk
-   * @return the result of the random walk
    * @throws IOException if an I/O error occurs
    */
-  public String random(String startWord, RandomWalkObserver observer) throws IOException {
+  public void random(String startWord, RandomWalkObserver observer) throws IOException {
     HashMap<String, LinkedList<Node>> record = new HashMap<>();
-    String route = startWord + " -> ";
+    StringBuilder route = new StringBuilder(startWord + " -> ");
     String tmp = startWord;
-    String pre = "";
+    String pre;
 
-    observer.update(route);
+    observer.update(route.toString());
     try {
       Thread.sleep(1000);  // 暂停1秒
     } catch (InterruptedException e) {
@@ -463,7 +464,7 @@ public class TextGraph {
       Random random = new Random();
       int num = random.nextInt(minus.size());
       tmp = minus.get(num);
-      route += (tmp + " -> ");
+      route.append(tmp).append(" -> ");
 
       if (!record.containsKey(pre)) {
         LinkedList<Node> list = new LinkedList<>();
@@ -483,7 +484,7 @@ public class TextGraph {
 
     FileWriter fileWriter = new FileWriter("src/file/randomWalk.txt", false);
 
-    route += "Finish";
+    route.append("Finish");
     if (Thread.currentThread().isInterrupted()) {
       observer.stopped();  // 发出停止通知
       fileWriter.write(route + " (Stopped)\n");
@@ -493,7 +494,6 @@ public class TextGraph {
     }
 
     fileWriter.close();
-    return route;
   }
 
   /**
@@ -501,15 +501,14 @@ public class TextGraph {
    * Interface version.
    *
    * @param word the word to start from
-   * @return the result of the random walk
    * @throws IOException if an I/O error occurs
    */
-  public String random(String word) throws IOException {
+  public void random(String word) throws IOException {
 
     HashMap<String, LinkedList<Node>> record = new HashMap<>();
     String route = "";
     String tmp = word;
-    String pre = "";
+    String pre;
 
     while (nodeInfo.containsKey(tmp)) {
       pre = tmp;
@@ -530,7 +529,7 @@ public class TextGraph {
       }
 
       System.out.printf(tmp + " -> ");
-      route += (tmp + " -> ");
+      route = route + (tmp + " -> ");
 
       // 随机选择minus中的一个word
       Random random = new Random();
@@ -559,7 +558,6 @@ public class TextGraph {
     route += tmp;
     fileWriter.write(route + "\n");  // 写入路径到文件
     fileWriter.close();  // 关闭文件
-    return route;
   }
 
 }
