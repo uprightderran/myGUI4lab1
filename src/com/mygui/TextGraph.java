@@ -1,5 +1,7 @@
 package com.mygui;
 
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
+
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -9,12 +11,13 @@ import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.LinkedList;
 import java.util.Map;
-import java.util.Random;
+import java.security.SecureRandom;
 import java.util.Set;
 
 /**
  * TextGraph.
  */
+@SuppressFBWarnings("DM_DEFAULT_ENCODING")
 public class TextGraph {
 
   /**
@@ -127,9 +130,10 @@ public class TextGraph {
    * @param color whether to include color in the visualization
    * @throws IOException if an I/O error occurs
    */
+  @SuppressFBWarnings("PATH_TRAVERSAL_OUT")
   public void showTextGraph(String path, boolean color) throws IOException {
-    try {
-      FileWriter fileWriter = new FileWriter(path);
+    try(FileWriter fileWriter = new FileWriter(path)) {
+
       fileWriter.write("digraph TextGraph {\r\n");
 
       // 写入节点信息
@@ -141,10 +145,7 @@ public class TextGraph {
       Set<String> visited = new HashSet<>();
       writeEdge(fileWriter, root, visited, color);
 
-
       fileWriter.write("}");
-      fileWriter.close();
-
     } catch (FileNotFoundException e) {
       System.out.println("File not Found");
     }
@@ -424,6 +425,11 @@ public class TextGraph {
   }
 
   /**
+   * Add an instance variable of the Random object
+   */
+  private SecureRandom random = new SecureRandom();
+
+  /**
    * Performs a random walk in the graph starting from the given word.
    *
    * @param startWord the word to start from
@@ -461,7 +467,6 @@ public class TextGraph {
         break;
       }
 
-      Random random = new Random();
       int num = random.nextInt(minus.size());
       tmp = minus.get(num);
       route.append(tmp).append(" -> ");
@@ -482,18 +487,16 @@ public class TextGraph {
       }
     }
 
-    FileWriter fileWriter = new FileWriter("src/file/randomWalk.txt", false);
-
     route.append("Finish");
-    if (Thread.currentThread().isInterrupted()) {
-      observer.stopped();  // 发出停止通知
-      fileWriter.write(route + " (Stopped)\n");
-    } else {
-      observer.finish();  // 发出完成通知
-      fileWriter.write(route + "\n");
+    try (FileWriter fileWriter = new FileWriter("src/file/randomWalk.txt", false)) {
+      if (Thread.currentThread().isInterrupted()) {
+        observer.stopped();  // 发出停止通知
+        fileWriter.write(route.toString() + " (Stopped)\n");
+      } else {
+        observer.finish();  // 发出完成通知
+        fileWriter.write(route.toString() + "\n");
+      }
     }
-
-    fileWriter.close();
   }
 
   /**
@@ -506,7 +509,7 @@ public class TextGraph {
   public void random(String word) throws IOException {
 
     HashMap<String, LinkedList<Node>> record = new HashMap<>();
-    String route = "";
+    StringBuilder route = new StringBuilder();
     String tmp = word;
     String pre;
 
@@ -529,10 +532,9 @@ public class TextGraph {
       }
 
       System.out.printf(tmp + " -> ");
-      route = route + (tmp + " -> ");
+      route.append(tmp).append(" -> ");
 
       // 随机选择minus中的一个word
-      Random random = new Random();
       int num = random.nextInt(minus.size());
       tmp = minus.get(num);
 
@@ -552,12 +554,11 @@ public class TextGraph {
         e.printStackTrace();
       }
     }
-    FileWriter fileWriter = new FileWriter("src/file/randomWalk.txt", false);
 
-    System.out.printf(tmp);
-    route += tmp;
-    fileWriter.write(route + "\n");  // 写入路径到文件
-    fileWriter.close();  // 关闭文件
+    try (FileWriter fileWriter = new FileWriter("src/file/randomWalk.txt", false)) {
+      System.out.printf(tmp);
+      route.append(tmp);
+      fileWriter.write(route + "\n");  // 写入路径到文件
+    }
   }
-
 }

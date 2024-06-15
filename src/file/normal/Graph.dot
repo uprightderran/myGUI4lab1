@@ -25,7 +25,7 @@ to -> explore [label = 1];
 explore -> strange [label = 1];
 strange -> a [label = 1];
 a -> new [label = 10, color = blue];
-new -> world [label = 5, color = blue];
+new -> world [label = 5];
 world -> and [label = 1];
 and -> a [label = 3];
 and -> new [label = 1];

@@ -94,7 +94,7 @@ public class Interface {
     g.showTextGraph(gvPath, color);
 
     long etime = System.currentTimeMillis();
-    System.out.printf("calculated in %d ms.\n", (etime - stime));
+    System.out.printf("calculated in %d ms.%n", (etime - stime));
 
     // √¸¡Ó–– ‰≥ˆpng
     try {
@@ -136,14 +136,14 @@ public class Interface {
       result = "No \"" + word1 + "\" or \"" + word2 + "\" in the graph!";
 
       long etime = System.currentTimeMillis();
-      System.out.printf("calculated in %d ms.\n", (etime - stime));
+      System.out.printf("calculated in %d ms.%n", (etime - stime));
 
     } else if (bridgeWords.isEmpty()) {
       System.out.println("No bridge words from \"" + word1 + "\" to \"" + word2 + "\"!");
       result = "No bridge words from \"" + word1 + "\" to \"" + word2 + "\"!";
 
       long etime = System.currentTimeMillis();
-      System.out.printf("calculated in %d ms.\n", (etime - stime));
+      System.out.printf("calculated in %d ms.%n", (etime - stime));
 
     } else {
       StringBuilder bridgeString;
@@ -157,7 +157,7 @@ public class Interface {
         result = "The bridge word from \"" + word1 + "\" to \"" + word2 + bridgeString;
 
         long etime = System.currentTimeMillis();
-        System.out.printf("calculated in %d ms.\n", (etime - stime));
+        System.out.printf("calculated in %d ms.%n", (etime - stime));
 
       } else {
         bridgeString = new StringBuilder("\" are: ");
@@ -175,7 +175,7 @@ public class Interface {
         result = "The bridge words from \"" + word1 + "\" to \"" + word2 + bridgeString;
 
         long etime = System.currentTimeMillis();
-        System.out.printf("calculated in %d ms.\n", (etime - stime));
+        System.out.printf("calculated in %d ms.%n", (etime - stime));
 
       }
     }
@@ -207,7 +207,7 @@ public class Interface {
     String newText = g.generateNewText(wordList);
 
     long etime = System.currentTimeMillis();
-    System.out.printf("calculated in %d ms.\n", (etime - stime));
+    System.out.printf("calculated in %d ms.%n", (etime - stime));
 
     System.out.println(newText);
     return newText;
@@ -230,7 +230,7 @@ public class Interface {
     String result = g.dijkstra(word1, word2);
 
     long etime = System.currentTimeMillis();
-    System.out.printf("calculated in %d ms.\n", (etime - stime));
+    System.out.printf("calculated in %d ms.%n", (etime - stime));
 
     return result;
   }
@@ -249,7 +249,7 @@ public class Interface {
     String result = g.dijkstraSingleWord(word);
 
     long etime = System.currentTimeMillis();
-    System.out.printf("calculated in %d ms.\n", (etime - stime));
+    System.out.printf("calculated in %d ms.%n", (etime - stime));
 
     return result;
   }
@@ -268,7 +268,7 @@ public class Interface {
     g.random(word);
 
     long etime = System.currentTimeMillis();
-    System.out.printf("calculated in %d ms.\n", (etime - stime));
+    System.out.printf("calculated in %d ms.%n", (etime - stime));
 
   }
 

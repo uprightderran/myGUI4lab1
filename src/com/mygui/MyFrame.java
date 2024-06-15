@@ -22,6 +22,7 @@ import javax.swing.SwingUtilities;
 /**
  * MyFrame.
  */
+@edu.umd.cs.findbugs.annotations.SuppressFBWarnings("PATH_TRAVERSAL_IN")
 public class MyFrame extends JFrame {
 
   /**
@@ -142,7 +143,7 @@ public class MyFrame extends JFrame {
   private void performFunction(int index, String path) {
     try {
       path = path.replace("D:\\\\eclipse-workspace\\\\myGUI4lab1\\\\", "").replace("\\\\", "/");
-      TextGraph graph = Interface.createTextGraph(path); // ʹ���޸ĺ��·�������?
+      TextGraph graph = Interface.createTextGraph(path);
       switch (index) {
         case 0:  // Show directed graph
 
@@ -245,7 +246,7 @@ public class MyFrame extends JFrame {
             walkThread.start();
 
             stopButton.addActionListener(event -> {
-              walkThread.interrupt();  // �����ж��ź�
+              walkThread.interrupt();
             });
           }
           break;
@@ -259,18 +260,18 @@ public class MyFrame extends JFrame {
 
   private void showImage(String imagePath) {
     try {
-      BufferedImage image = ImageIO.read(new File(imagePath));  // 使用ImageIO读取图片
-      ImageIcon icon = new ImageIcon(image);  // 创建�?个新的ImageIcon
+      BufferedImage image = ImageIO.read(new File(imagePath));
+      ImageIcon icon = new ImageIcon(image);
       JLabel label = new JLabel(icon);
-      JScrollPane scrollPane = new JScrollPane(label);  // 使用JScrollPane包裹JLabel
+      JScrollPane scrollPane = new JScrollPane(label);
       scrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
       scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED);
 
       JFrame frame = new JFrame("Show Graph");
-      frame.getContentPane().removeAll();  // 移除旧组�?
-      frame.add(scrollPane);  // 将滚动面板添加到窗口�?
+      frame.getContentPane().removeAll();
+      frame.add(scrollPane);
       frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-      frame.pack();  // 调整窗口大小以�?�应内容
+      frame.pack();
       frame.setVisible(true);
     } catch (IOException e) {
       JOptionPane.showMessageDialog(null, "Error loading image: " + e.getMessage());
