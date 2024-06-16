@@ -1,0 +1,48 @@
+
+²
+java:S1319õ"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ùâ§ÓıÿÿÿÿJ$3f638b26-ee3b-41d9-a504-e65ed76a88cc
+ª
+java:S1319†"hThe type of "wordList" should be an interface such as "List" rather than the implementation "ArrayList".(ñÇïãşÿÿÿÿJ$d94d3429-7dd9-4bc0-b593-9eea19f92d05
+X
+java:S1643‰"Use a StringBuilder instead.(É¹îvJ$a52d7550-c0fb-46a1-9f15-c663515afef0
+Y
+java:S1643"Use a StringBuilder instead.(íÈÙËJ$3cef6113-c3ce-4522-ade4-f1f746bd2970
+Y
+java:S1643‘"Use a StringBuilder instead.(ÕŞ½£J$7331258a-eff0-4304-940e-f7ae702ab8e1
+X
+java:S1643"Use a StringBuilder instead.(·•”-J$115538be-00e0-4c84-ae0c-e54eec48bfa4
+
+java:S1192²"KDefine a constant instead of duplicating this literal " [label = " 3 times.(¶¶„óúÿÿÿÿJ$fb552e5f-73c5-492d-b4a0-77c56f1dedb2
+ˆ
+java:S1192³"FDefine a constant instead of duplicating this literal "];\r
+" 3 times.(ñíıûÿÿÿÿJ$200d290d-1600-44f1-ac95-22953f11d325
+ƒ	java:S125"<This block of commented-out lines of code should be removed.(·Õüñüÿÿÿÿ8Ä‹•ÿ2J$92cbfa6e-714e-44a1-a411-9fa9e553f793
+•	java:S1150"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ÿ©µJ$32c7f7dd-7f70-4a10-aa35-529638fb6678
+f	java:S106y"+Replace this use of System.out by a logger.(«õë»J$2febb389-00c5-4002-be0d-3dad07c1571b
+g	java:S106–"+Replace this use of System.out by a logger.(í ‘‘J$98a4ab67-1105-4f1a-81be-caf6463d9f39
+”
+java:S3776£"RRefactor this method to reduce its Cognitive Complexity from 28 to the 15 allowed.(Û”ó©ùÿÿÿÿJ$649638d9-5d57-4cad-864c-87c8411ae7e5
+”
+java:S3776Õ"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(¿¬ËıÿÿÿÿJ$c9cb28fc-388b-4a4a-9a74-83e036843a10
+o
+java:S1168Û"+Return an empty collection instead of null.(¥¹ï8®Æ•ÿ2J$b0f23346-41f7-4bf5-943b-def15a89073e
+
+java:S3776Ÿ"RRefactor this method to reduce its Cognitive Complexity from 45 to the 15 allowed.(ÕòJ$5635fb0c-12ec-4489-9d55-a04d3f6f16de
+|
+java:S6213Ù":Rename this variable to not match a restricted identifier.(·»¥æüÿÿÿÿJ$49cbb8eb-879d-4ad1-9211-a324bb835398
+g	java:S106‡"+Replace this use of System.out by a logger.(è®ÈùJ$9a2f2808-ec65-495c-bff9-837bc6fb238c
+g	java:S106ˆ"+Replace this use of System.out by a logger.(¬®´ÖJ$b450aac9-21e4-4cc3-b7ab-739e91274112
+
+java:S3776·"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(Àï‘J$97942c73-d7d3-4a3a-bd7d-f03a41eab83e
+w
+java:S6213¸":Rename this variable to not match a restricted identifier.(É§Å˜J$05d7d3cb-7d7f-40b7-92a7-ec7804aba213
+w
+java:S6213ÿ":Rename this variable to not match a restricted identifier.(É§Å˜J$39ce281f-ddee-4aaf-aa3f-481cb9fb65cf
+~
+java:S3457–"AFormat specifiers should be used instead of string concatenation.(’ÚÓ£J$f06c63b0-e10a-4754-9e7a-8cf10030ecb2
+g	java:S106–"+Replace this use of System.out by a logger.(’ÚÓ£J$ed709962-1815-4264-8ce0-8bf2ec787b26
+›
+java:S2142©"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€J$9c96b8dc-403b-47c6-91a1-efda64af4d97
+l	java:S106¯"+Replace this use of System.out by a logger.(©ééîøÿÿÿÿJ$dde071da-41e1-4e8a-8012-19d86b1dc575
+ƒ
+java:S6541Ÿ"ÅA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 84 to 64, Complexity from 26 to 14, Nesting Level from 4 to 2, Number of Variables from 28 to 6.(ÕòJ$c1ac6801-a78b-4453-9379-f64d16204dc7

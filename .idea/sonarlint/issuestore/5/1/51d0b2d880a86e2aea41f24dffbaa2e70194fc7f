@@ -1,0 +1,10 @@
+
+	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(µ¿ƒÙÿÿÿÿÿJ$4c8279fe-c984-4969-9209-7c96b76f5323
+‰
+java:S1192"HDefine a constant instead of duplicating this literal "another" 4 times.(ö¾ÒıÿÿÿÿJ$a570220a-60d0-422b-9744-06c96b12fdb5
+‡
+java:S1192"FDefine a constant instead of duplicating this literal "hello" 4 times.(ö¾ÒıÿÿÿÿJ$44790a3e-f397-4b48-94c4-9e47d069061f
+‰
+java:S1192"HDefine a constant instead of duplicating this literal "example" 3 times.(ö¾ÒıÿÿÿÿJ$e303d963-8c02-4dd2-8c0c-044bc957e6ce
+s
+java:S5960"+Remove this assertion from production code.(ãú©ùÿÿÿÿ8şÔ—ş2J$a23c999b-aef0-4b0c-9b3b-63cac73dab16

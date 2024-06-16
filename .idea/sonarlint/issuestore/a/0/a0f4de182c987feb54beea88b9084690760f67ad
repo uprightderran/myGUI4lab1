@@ -1,0 +1,31 @@
+
+k
+java:S1604c"(Make this anonymous inner class a lambda(©Ã¿ë8½ˆ£ş2J$2f1ef894-9243-467f-885d-58af8e7da4e8
+p
+java:S1604o"(Make this anonymous inner class a lambda(¤Ù€Üüÿÿÿÿ8½ˆ£ş2J$3d38dd22-e1e4-4aa9-b110-37fffe1cc8d6
+q
+java:S1604ˆ"(Make this anonymous inner class a lambda(‹É¥”ùÿÿÿÿ8½ˆ£ş2J$4146d366-bb00-422d-996c-dca83fa361eb
+q
+java:S1604"(Make this anonymous inner class a lambda(Ô¶µÿşÿÿÿÿ8¾ˆ£ş2J$2b671ee4-5d2b-41e9-b88a-32ea5e22eb53
+—
+java:S1192–"NDefine a constant instead of duplicating this literal "GraphData.txt" 6 times.(¡ŸË‹úÿÿÿÿ8Çˆ£ş2J$e55efb7b-8636-4342-8140-2519825236d3
+¦
+java:S1450H"cRemove the "optionsConfirmButton" field and declare it as a local variable in the relevant methods.(Ë’Íû8Öˆ£ş2J$c4577768-8232-41e2-b2ca-9dcc9703dc78
+£
+java:S1450:"[Remove the "optionsFrame" field and declare it as a local variable in the relevant methods.(Ñ¤¡Õøÿÿÿÿ8×ˆ£ş2J$c504957d-56f2-4918-a462-607813e3a243
+‘
+java:S3252W"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(Õû»öşÿÿÿÿ8áˆ£ş2J$40c3aab6-a551-4392-8f0a-b1e8e2f3b745
+”
+java:S3252{"LUse static access with "javax.swing.WindowConstants" for "DISPOSE_ON_CLOSE".(‚‚™šşÿÿÿÿ8õˆ£ş2J$17edf315-cb3a-45c1-81c3-3efdbb67dad1
+›
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 32 to the 15 allowed.(ÓÆ´Òıÿÿÿÿ8‰£ş2J$dd475f56-f307-4d9c-b875-703c606f6b28
+o
+java:S1602ø",Remove useless curly braces around statement(óÁÆ_8µ‰£ş2J$a91d4668-186a-4c9a-8c42-a29d1a81c35f
+§
+java:S3252‹"^Use static access with "javax.swing.ScrollPaneConstants" for "HORIZONTAL_SCROLLBAR_AS_NEEDED".(ÑÍä¹ùÿÿÿÿ8Ã‰£ş2J$9206887f-4e64-4317-a856-976f500299c8
+ 
+java:S3252Œ"\Use static access with "javax.swing.ScrollPaneConstants" for "VERTICAL_SCROLLBAR_AS_NEEDED".(šƒùÎ8Ä‰£ş2J$017b16a0-129c-4275-a423-bde3a4892546
+
+java:S3252‘"LUse static access with "javax.swing.WindowConstants" for "DISPOSE_ON_CLOSE".(×Ğ‘÷8Ä‰£ş2J$b6269167-d09f-4980-93b9-61935115efd8
+
+java:S6541"ÆA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 107 to 64, Complexity from 16 to 14, Nesting Level from 5 to 2, Number of Variables from 15 to 6.(ÓÆ´Òıÿÿÿÿ8ù‰£ş2J$78c27b2d-430c-439f-9e81-07191714b195
