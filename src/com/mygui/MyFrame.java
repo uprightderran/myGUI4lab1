@@ -22,7 +22,7 @@ import javax.swing.SwingUtilities;
 /**
  * MyFrame.
  */
-@edu.umd.cs.findbugs.annotations.SuppressFBWarnings("PATH_TRAVERSAL_IN")
+//@edu.umd.cs.findbugs.annotations.SuppressFBWarnings("PATH_TRAVERSAL_IN")
 public class MyFrame extends JFrame {
 
   /**

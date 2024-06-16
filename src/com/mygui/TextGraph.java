@@ -1,6 +1,6 @@
 package com.mygui;
 
-import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
+//import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
@@ -17,7 +17,7 @@ import java.util.Set;
 /**
  * TextGraph.
  */
-@SuppressFBWarnings("DM_DEFAULT_ENCODING")
+//@SuppressFBWarnings("DM_DEFAULT_ENCODING")
 public class TextGraph {
 
   /**
@@ -130,7 +130,7 @@ public class TextGraph {
    * @param color whether to include color in the visualization
    * @throws IOException if an I/O error occurs
    */
-  @SuppressFBWarnings("PATH_TRAVERSAL_OUT")
+//  @SuppressFBWarnings("PATH_TRAVERSAL_OUT")
   public void showTextGraph(String path, boolean color) throws IOException {
     try(FileWriter fileWriter = new FileWriter(path)) {
 

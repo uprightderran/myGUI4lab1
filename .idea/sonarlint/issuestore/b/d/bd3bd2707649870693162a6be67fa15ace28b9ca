@@ -1,0 +1,35 @@
+
+v
+java:S1141h"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿJ$10556433-9acb-4da7-8965-198fd046d25b
+‹
+java:S1192"IDefine a constant instead of duplicating this literal "\" to \"" 6 times.(ÏË ŒıÿÿÿÿJ$ac243ce5-4f70-4ee7-b007-057d5944a3b4
+˜
+java:S1192a"WDefine a constant instead of duplicating this literal "calculated in %d ms.%n" 9 times.(ßÁÇüÿÿÿÿJ$7424dfd8-a4fd-47de-97ee-79f5eae06a01
+ˆ
+java:S1192n"LDefine a constant instead of duplicating this literal "IOException" 3 times.(ıìçJ$e1513154-22e7-4095-9d72-9bdf2bff7325
+k	java:S106"+Replace this use of System.out by a logger.(¨ØÎûÿÿÿÿJ$36cc1dd0-af32-425b-870c-99eefddff6ae
+k	java:S106,"+Replace this use of System.out by a logger.(›ï•üÿÿÿÿJ$30d7834c-eb57-4ef1-9df9-b4322516c7a7
+k	java:S106D"+Replace this use of System.out by a logger.(Ì ¯¢üÿÿÿÿJ$2a7dd25a-d746-43bc-88e6-28a1435f9337
+k	java:S106a"+Replace this use of System.out by a logger.(ßÁÇüÿÿÿÿJ$1c232eef-1314-42ba-be66-73c172db632d
+t
+java:S1874g",Remove this use of "exec"; it is deprecated.(¹—øÿÿÿÿ8ÄÜ—ş2J$fcc0a6bb-520c-4ba6-9d51-3871924729e8
+š
+java:S2142j"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€J$807bb0df-31a4-4c64-b2e7-3ec505d6c5c1
+f	java:S106n"+Replace this use of System.out by a logger.(ıìçJ$1aa169f3-ff8f-453c-9a3c-c124ec6d0161
+
+java:S3776z"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(ı¥¦ÓJ$df2e467a-ce2b-4b61-9e6f-5fcc0b822f06
+g	java:S106‡"+Replace this use of System.out by a logger.(¢¡“¦J$a089ebba-4ebe-4680-b0de-f749e54cc38d
+l	java:S106‹"+Replace this use of System.out by a logger.(ßÁÇüÿÿÿÿJ$2dab4582-4535-4178-a106-70a6c6554a84
+l	java:S106"+Replace this use of System.out by a logger.(ÏË ŒıÿÿÿÿJ$abe60fa4-5ba5-49f9-bf0b-9b3678c80979
+l	java:S106’"+Replace this use of System.out by a logger.(ßÁÇüÿÿÿÿJ$d56c3be5-6ad8-44ef-8f39-20b19c209fb5
+g	java:S106œ"+Replace this use of System.out by a logger.(‡Ñâ¡J$bbc036d8-8bf9-479f-a86a-fd5fa1e4acf1
+l	java:S106 "+Replace this use of System.out by a logger.(ßÁÇüÿÿÿÿJ$1257c3b1-69ac-4431-bc79-a203731fc6de
+l	java:S106®"+Replace this use of System.out by a logger.(ú®à†üÿÿÿÿJ$bb14dc3f-5d7b-48aa-9a03-631a8fc161b3
+l	java:S106²"+Replace this use of System.out by a logger.(ßÁÇüÿÿÿÿJ$2b0eec82-8ade-4209-b56a-846dd834a149
+l	java:S106Ò"+Replace this use of System.out by a logger.(ßÁÇüÿÿÿÿJ$49b4b91f-1505-4b11-a695-676648a4695b
+g	java:S106Ô"+Replace this use of System.out by a logger.(îòŠ†J$54a0177f-43c4-48a3-a521-768aca602e8c
+l	java:S106é"+Replace this use of System.out by a logger.(ßÁÇüÿÿÿÿJ$1daf158a-7268-4403-a49a-08afab83faf8
+l	java:S106ü"+Replace this use of System.out by a logger.(ßÁÇüÿÿÿÿJ$026f8846-2929-43c0-94ac-4d3973901e30
+l	java:S106"+Replace this use of System.out by a logger.(ßÁÇüÿÿÿÿJ$8fc40755-d378-4960-94b5-d520030e0da4
+g	java:S106"+Replace this use of System.out by a logger.(ıìçJ$0edbf5d7-f6cc-4105-b6e1-a713c6cbb8dd
+g	java:S106¬"+Replace this use of System.out by a logger.(ıìçJ$8122cd0e-cdef-44da-be8f-99b61715fe49
